@@ -7,7 +7,7 @@ let p_102 =
       let u = ((!. v1 v1)*(!. v2 v0)-(!. v1 v0)*(!. v2 v1)) / ((!. v0 v0)*(!. v1 v1) - (!. v0 v1)*(!. v1 v0))
       let v = ((!. v0 v0)*(!. v2 v1)-(!. v0 v1)*(!. v2 v0)) / ((!. v0 v0)*(!. v1 v1) - (!. v0 v1)*(!. v1 v0))
       u>=0.0 && v >=0.0 && u+v<=1.0
-   let s = "C:\\Users\\Asus\\Desktop\\Euler\\p102.txt"
+   let s = "p102.txt" (*this should be the filepath where the problem's file is*)
    System.IO.File.ReadAllLines(s) |> 
    Array.map (fun x -> 
                 x.Split [|','|] |> 
